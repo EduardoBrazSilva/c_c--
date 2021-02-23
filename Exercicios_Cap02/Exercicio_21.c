@@ -9,17 +9,17 @@ void main(){
     printf("Informe o nome do livro: \n");
     gets(nome);
     printf("Informe o tipo de usuario: \n");
-    scanf("%c", &tipo);
+    scanf("%s", &tipo);
     
     
-    if (tipo == "aluno")
+    if (strcmp (tipo,"aluno")==0)
     {
-        printf("Nome do livro: %c \n   Tipo de usuario: %c \nTotal de dias: 3", nome, tipo);
+        printf("Nome do livro: %s \nTipo de usuario: %s \nTotal de dias: 3", nome, tipo);
     }
-    else if (tipo=="professor")
+    else if (strcmp (tipo,"professor")==0)
     {
-        printf("Nome do livro: %c\n Tipo de usuario: %c \nTotal de dias: 10", nome, tipo);
+        printf("Nome do livro: %s\nTipo de usuario: %s \nTotal de dias: 10", nome, tipo);
     }
-    
+    return 0;
 
 }
