@@ -20,6 +20,6 @@ void main(){
     {
         printf("Nome do livro: %c\n Tipo de usuario: %c \nTotal de dias: 10", nome, tipo);
     }
-    return 0;
+    
 
 }
